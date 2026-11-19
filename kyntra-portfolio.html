@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7efe1">
+<meta name="description" content="Web development, WordPress administration, technical SEO and AI-powered workflow automation.">
+<title>KYNTRA — Web Systems, Technical SEO & Automation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Tomorrow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f7efe1;--paper:#fcf7ee;--peach:#f2d8bd;--orange:#f47721;--orange-dark:#b84f10;--slate:#354d5c;--ink:#1f1c1b;--muted:#655b50;--line:#e2d6c2;--display:"Tomorrow",Arial,sans-serif;--serif:"Shippori Mincho",Georgia,serif;--gutter:clamp(22px,5vw,84px);--max:1370px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--serif);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.container{width:min(100%,var(--max));margin:auto;padding-inline:var(--gutter)}.eyebrow{font:600 11px var(--display);letter-spacing:.18em;text-transform:uppercase;color:var(--orange-dark)}.section{padding-block:clamp(76px,9vw,120px)}.section-title{font:400 clamp(32px,4vw,56px)/1.08 var(--display);letter-spacing:-.035em;text-transform:uppercase;margin:15px 0 22px}.intro{max-width:650px;color:var(--muted);font-size:clamp(16px,1.4vw,19px);line-height:1.75}.accent{color:var(--orange-dark)}.btn{display:inline-flex;align-items:center;gap:14px;padding:14px 20px;border:1px solid transparent;background:var(--orange-dark);color:#fff;font:600 11px var(--display);letter-spacing:.13em;text-transform:uppercase;transition:.2s}.btn:hover{background:#963d0b;transform:translateY(-2px)}.btn.outline{background:transparent;border-color:#948676;color:var(--ink)}.arrow{font:20px Arial;line-height:10px}
+header{height:86px;padding-inline:var(--gutter);display:flex;align-items:center;justify-content:space-between;position:fixed;inset:0 0 auto;z-index:20;transition:.25s;border-bottom:1px solid transparent}header.scrolled{height:68px;background:rgba(247,239,225,.96);box-shadow:0 12px 35px #1f1c1b10}.brand{display:flex;align-items:center;gap:11px;font:600 17px var(--display);letter-spacing:.13em}.brand-symbol{width:36px;height:36px;display:block}.brand small{display:block;font:500 8px var(--display);letter-spacing:.23em;color:var(--muted);margin-top:3px}.nav{display:flex;align-items:center;gap:clamp(18px,2.4vw,36px);font:600 11px var(--display);letter-spacing:.12em;text-transform:uppercase}.nav a:not(.btn):hover{color:var(--orange-dark)}.menu{display:none;border:1px solid var(--line);background:transparent;padding:10px;font:600 11px var(--display)}
+.hero{min-height:min(max(690px,100svh),960px);display:flex;align-items:center;position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(90deg,#f1e2c9 0%,#f1e2c9ed 38%,#f1e2c99c 65%,#f1e2c933 100%)}.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse at 78% 42%,#d38b5b 0,transparent 28%),linear-gradient(135deg,#d8c4a5,#f1e2c9 48%,#c5b59b)}.hero:after{content:"";position:absolute;inset:0;z-index:-1;opacity:.26;background-image:linear-gradient(90deg,transparent 49.9%,#6e5b4530 50%,transparent 50.1%),linear-gradient(0deg,transparent 49.9%,#6e5b4530 50%,transparent 50.1%);background-size:120px 120px;mask-image:linear-gradient(90deg,transparent,#000)}.hero-inner{padding-top:100px;padding-bottom:70px;width:100%}.hero-copy{max-width:740px}.hero h1{font:400 clamp(45px,7vw,92px)/.99 var(--display);letter-spacing:-.055em;text-transform:uppercase;margin:20px 0 28px}.hero h1 span{color:var(--orange-dark)}.hero-lead{max-width:590px;color:#51483e;font-size:clamp(17px,1.5vw,20px);line-height:1.7;margin-bottom:32px}.hero-note{font-size:13px;color:var(--muted);margin-top:17px}.hero-index{position:absolute;right:var(--gutter);bottom:50px;font:500 10px var(--display);letter-spacing:.2em;writing-mode:vertical-rl;color:#5c5145}
+.services{background:var(--paper);background-image:linear-gradient(to right,#1f1c1b0d 1px,transparent 1px);background-size:max(220px,16.666vw) 100%}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:48px}.service-card{background:var(--paper);padding:30px;min-height:260px}.service-no{font:500 11px var(--display);color:var(--orange-dark);letter-spacing:.16em}.service-icon{width:38px;height:38px;margin:22px 0 15px;color:var(--orange-dark)}.service-card h3{font:500 19px var(--display);margin:0 0 12px}.service-card p{font-size:14px;line-height:1.7;color:var(--muted);margin:0}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.tags span{font:500 10px var(--display);background:#fff0e3;color:#91430f;padding:6px 9px}
+.work{background:var(--slate);color:var(--cream)}.work .intro{color:#d1c8bb}.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:48px}.project{border:1px solid #ffffff28;background:#ffffff08;min-height:310px;display:flex;flex-direction:column;justify-content:space-between;padding:28px;position:relative;overflow:hidden}.project:after{content:"";position:absolute;width:220px;height:220px;border:1px solid #f4772155;border-radius:50%;right:-70px;top:-75px;box-shadow:0 0 0 24px #f4772110,0 0 0 48px #f4772109}.project-top{display:flex;justify-content:space-between;align-items:center;font:500 10px var(--display);letter-spacing:.14em;color:#f5a46f}.project h3{font:400 clamp(22px,2.5vw,32px)/1.2 var(--display);max-width:450px;margin:32px 0 12px}.project p{color:#d1c8bb;line-height:1.7;font-size:14px;max-width:520px}.project-foot{font:500 10px var(--display);letter-spacing:.1em;text-transform:uppercase;color:#f5a46f;margin-top:20px}
+.process{background:var(--paper)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ffffff30;margin-top:48px}.step{background:var(--ink);color:var(--cream);padding:30px;min-height:205px}.step b{font:600 11px var(--display);letter-spacing:.15em;color:var(--orange)}.step h3{font:500 22px var(--display);margin:24px 0 10px}.step p{font-size:14px;line-height:1.7;color:#cfc5b6;margin:0}
+.about{background:#efe4d1}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about-panel{background:var(--slate);color:var(--cream);padding:clamp(28px,5vw,58px);position:relative;min-height:340px;display:flex;flex-direction:column;justify-content:space-between}.about-panel:after{content:"";position:absolute;right:28px;top:28px;width:90px;height:90px;border:1px solid #f4772180;transform:rotate(45deg)}.about-panel strong{font:400 clamp(28px,4vw,48px)/1.1 var(--display);text-transform:uppercase;max-width:440px}.about-panel span{font:500 10px var(--display);letter-spacing:.17em;color:#f5a46f}.skill-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px}.skill-list span{border-bottom:1px solid #b9a98f;padding:10px 0;font:500 11px var(--display);letter-spacing:.06em}
+.faq{background:var(--paper)}.faq-list{max-width:900px;margin-top:38px;border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line);padding:20px 0}summary{cursor:pointer;list-style:none;font:500 17px var(--display);display:flex;justify-content:space-between;gap:20px}summary::-webkit-details-marker{display:none}summary:after{content:"+";font:300 24px var(--display);color:var(--orange-dark)}details[open] summary:after{content:"−"}details p{max-width:760px;color:var(--muted);font-size:15px;line-height:1.75;margin:16px 0 0}
+.contact{background:var(--peach)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.contact-aside{border-left:1px solid #9b765c;padding-left:28px}.contact-aside p{font-size:16px;line-height:1.8;color:#604a39}.contact-aside .small{font:500 10px var(--display);letter-spacing:.14em;text-transform:uppercase;color:#805b40}
+footer{background:var(--ink);color:var(--cream);padding:38px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:25px}.footer-links{display:flex;gap:20px;flex-wrap:wrap;font:500 10px var(--display);letter-spacing:.1em;text-transform:uppercase;color:#d0c6b9}.copyright{font-size:12px;color:#a99e91}
+@media(max-width:900px){.nav{gap:14px}.nav a:not(.btn){font-size:10px}.about-grid,.contact-grid{gap:35px}}
+@media(max-width:700px){header{height:72px}.menu{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;padding:22px var(--gutter);background:var(--cream);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}.nav.open{display:flex}.nav .btn{margin-top:8px;justify-content:center}.hero{min-height:760px}.hero-index{display:none}.service-grid,.steps{grid-template-columns:1fr}.service-card{min-height:unset}.work-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.project{min-height:280px}.about-panel{min-height:280px}.footer-inner{align-items:flex-start;flex-direction:column}.skill-list{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header id="header">
+  <a class="brand" href="#top" aria-label="Kyntra home">
+    <svg class="brand-symbol" viewBox="0 0 48 48" aria-hidden="true"><path d="M7 39 24 7l17 32H30L24 27l-6 12Z" fill="#354d5c"/><path d="M24 7 41 39H30L24 27" fill="none" stroke="#f47721" stroke-width="3"/><path d="M13 29h22" stroke="#f7efe1" stroke-width="2"/></svg>
+    <span>KYNTRA<small>WEB SYSTEMS & AUTOMATION</small></span>
+  </a>
+  <button class="menu" id="menuButton" aria-expanded="false" aria-controls="nav">MENU ☰</button>
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <a href="#expertise">Expertise</a><a href="#work">Projects</a><a href="#process">Approach</a><a href="#about">About</a><a href="#faq">FAQ</a>
+    <a class="btn" href="#contact">Let's connect <span class="arrow">↗</span></a>
+  </nav>
+</header>
+<main id="top">
+<section class="hero">
+ <div class="container hero-inner"><div class="hero-copy">
+  <div class="eyebrow">Webmaster · Technical SEO · AI automation</div>
+  <h1>Building smarter<br><span>web experiences</span><br>that work.</h1>
+  <p class="hero-lead">I help businesses maintain, improve and connect their digital systems — from reliable WordPress websites and technical SEO to practical AI-powered workflow automation.</p>
+  <div class="actions"><a class="btn" href="#work">Explore selected projects <span class="arrow">↗</span></a><a class="btn outline" href="#contact">Discuss a project</a></div>
+  <p class="hero-note">Web systems · Search visibility · Workflow efficiency</p>
+ </div></div><div class="hero-index">INDEPENDENT DIGITAL SYSTEMS PRACTICE · 2026</div>
+</section>
+
+<section class="section services" id="expertise"><div class="container">
+ <div class="eyebrow">01 / What I work on</div><h2 class="section-title">Practical skills.<br><span class="accent">Connected solutions.</span></h2>
+ <p class="intro">A blend of website development, technical troubleshooting, search optimization and automation — focused on making everyday digital operations more dependable.</p>
+ <div class="service-grid">
+  <article class="service-card"><span class="service-no">01 — WEB</span><svg class="service-icon" viewBox="0 0 40 40"><rect x="4" y="6" width="32" height="27" rx="1"/><path d="M4 13h32M10 9.5h.1M14 9.5h.1M18 9.5h.1M14 20h12M14 25h8"/></svg><h3>Website Development & Maintenance</h3><p>WordPress administration, theme and plugin updates, troubleshooting, quality checks and ongoing website maintenance. Familiar with Squarespace, Duda, Webflow and Wix.</p><div class="tags"><span>WordPress</span><span>HTML / CSS</span><span>JavaScript</span><span>PHP</span></div></article>
+  <article class="service-card"><span class="service-no">02 — SEARCH</span><svg class="service-icon" viewBox="0 0 40 40"><circle cx="17" cy="17" r="10"/><path d="m24 24 10 10M12 18l4-4 4 3 5-6"/></svg><h3>Technical SEO & Website Audits</h3><p>Technical checks for indexing, crawlability, metadata, headings, canonicals, sitemaps, internal links, page performance and on-page structure.</p><div class="tags"><span>Google Search Console</span><span>GA4</span><span>Screaming Frog</span><span>SEMrush</span></div></article>
+  <article class="service-card"><span class="service-no">03 — AUTOMATION</span><svg class="service-icon" viewBox="0 0 40 40"><rect x="4" y="5" width="12" height="10"/><rect x="24" y="25" width="12" height="10"/><path d="M16 10h6a4 4 0 0 1 4 4v11M24 30h-6a4 4 0 0 1-4-4V15"/></svg><h3>AI & Workflow Automation</h3><p>Workflow design that connects forms, AI services, spreadsheets, email and messaging — reducing repetitive manual steps and improving follow-up.</p><div class="tags"><span>n8n</span><span>Zapier</span><span>AI Chatbots</span><span>Webhooks</span></div></article>
+  <article class="service-card"><span class="service-no">04 — INTEGRATION</span><svg class="service-icon" viewBox="0 0 40 40"><path d="M7 12h26M7 28h26M12 7v10M28 23v10"/><circle cx="12" cy="22" r="5"/><circle cx="28" cy="18" r="5"/></svg><h3>Systems & API Integration</h3><p>Connecting tools and services using REST APIs, HTTP requests, JSON, webhooks and third-party integrations, with practical data handling.</p><div class="tags"><span>REST API</span><span>HTTP / JSON</span><span>SQL</span><span>Webhooks</span></div></article>
+  <article class="service-card"><span class="service-no">05 — SUPPORT</span><svg class="service-icon" viewBox="0 0 40 40"><path d="M7 21a13 13 0 0 1 26 0v8a4 4 0 0 1-4 4h-3v-9h7M7 24h7v9h-3a4 4 0 0 1-4-4z"/></svg><h3>Technical Support & Administration</h3><p>Website issue investigation, documentation, data organization, QA, system checks and day-to-day technical and administrative support.</p><div class="tags"><span>QA</span><span>Documentation</span><span>Microsoft Office</span></div></article>
+  <article class="service-card"><span class="service-no">06 — OPTIMIZATION</span><svg class="service-icon" viewBox="0 0 40 40"><path d="M5 32V8M5 32h30M11 26l7-8 5 4 10-12"/><path d="M26 10h7v7"/></svg><h3>Website Quality & Optimization</h3><p>Reviewing website structure, user experience, content presentation, image handling, accessibility basics and performance opportunities.</p><div class="tags"><span>Site Audits</span><span>Performance</span><span>UX Checks</span></div></article>
+ </div>
+</div></section>
+
+<section class="section work" id="work"><div class="container">
+ <div class="eyebrow">02 / Selected builds</div><h2 class="section-title">Ideas turned into<br><span style="color:#f5a46f">working systems.</span></h2>
+ <p class="intro">Independent projects and practical prototypes that demonstrate website development, automation and technical problem-solving.</p>
+ <div class="work-grid">
+  <article class="project"><div class="project-top"><span>01 / SEO TOOLING</span><span>PERSONAL PROJECT</span></div><div><h3>SiteCare Copilot</h3><p>A lightweight website analysis project built around technical SEO checks, structured scan results and an AI-assisted workflow for interpreting website issues.</p></div><div class="project-foot">Website scanning · Technical SEO · Cloudflare Worker</div></article>
+  <article class="project"><div class="project-top"><span>02 / CONVERSATIONAL AI</span><span>AUTOMATION PROTOTYPE</span></div><div><h3>Voice Lead Assistant</h3><p>A voice-enabled website assistant concept that gathers visitor details, confirms the information and sends lead data through an automated workflow.</p></div><div class="project-foot">Speech interface · Groq · Zapier · Google Sheets</div></article>
+  <article class="project"><div class="project-top"><span>03 / MESSAGING AUTOMATION</span><span>WORKFLOW PROJECT</span></div><div><h3>Clinic Booking Automation</h3><p>A Messenger and n8n workflow concept for appointment requests, booking details, payment-reference collection and status updates.</p></div><div class="project-foot">n8n · Facebook Messenger · Google Sheets</div></article>
+  <article class="project"><div class="project-top"><span>04 / DIGITAL EXPERIENCE</span><span>PORTFOLIO PROJECT</span></div><div><h3>Web & WordPress Projects</h3><p>Website administration and development work focused on responsive presentation, content structure, troubleshooting and technical improvements.</p></div><div class="project-foot">WordPress · HTML · CSS · JavaScript</div></article>
+ </div>
+</div></section>
+
+<section class="section process" id="process"><div class="container">
+ <div class="eyebrow">03 / Working approach</div><h2 class="section-title">Clear steps.<br><span class="accent">Useful outcomes.</span></h2>
+ <p class="intro">A straightforward process keeps the work focused, understandable and aligned with the actual problem.</p>
+ <div class="steps">
+  <article class="step"><b>STEP 01 / UNDERSTAND</b><h3>Review the requirements</h3><p>Understand the website, workflow or technical issue, identify the goal and clarify what needs to improve.</p></article>
+  <article class="step"><b>STEP 02 / IMPLEMENT</b><h3>Build or optimize</h3><p>Apply the agreed changes, configure the tools and integrations, and keep the solution as simple as practical.</p></article>
+  <article class="step"><b>STEP 03 / VALIDATE</b><h3>Test and refine</h3><p>Check the result, troubleshoot issues, document important details and identify sensible next improvements.</p></article>
+ </div>
+</div></section>
+
+<section class="section about" id="about"><div class="container about-grid">
+ <div><div class="eyebrow">04 / About</div><h2 class="section-title">Technical thinking.<br><span class="accent">Practical execution.</span></h2>
+ <p class="intro">I’m a web and IT professional with over six years of experience across webmaster responsibilities, website administration and technical SEO-related work. My experience also includes building practical automation workflows and connecting digital tools.</p>
+ <p class="intro">I enjoy investigating problems, learning new technologies and finding ways to make websites and business processes work better.</p>
+ <div class="skill-list"><span>Website Administration</span><span>Technical SEO</span><span>Workflow Automation</span><span>WordPress</span><span>API Integrations</span><span>Technical Troubleshooting</span><span>HTML / CSS / JS</span><span>Data & Documentation</span></div>
+ </div>
+ <div class="about-panel"><span>WEBMASTER · TECHNICAL SEO · IT</span><strong>Make technology useful, reliable and easier to manage.</strong><span>CONTINUOUS LEARNING / PROBLEM SOLVING</span></div>
+</div></section>
+
+<section class="section faq" id="faq"><div class="container">
+ <div class="eyebrow">05 / Frequently asked</div><h2 class="section-title">A few useful<br><span class="accent">details.</span></h2>
+ <div class="faq-list">
+  <details><summary>What type of work do you handle?</summary><p>Website development and maintenance, WordPress administration, technical SEO checks, website troubleshooting, workflow automation and third-party integrations.</p></details>
+  <details><summary>Do you work with platforms other than WordPress?</summary><p>Yes. I have experience maintaining websites built with platforms such as Squarespace, Duda, Webflow and Wix, alongside WordPress.</p></details>
+  <details><summary>What automation tools do you use?</summary><p>My hands-on workflow experience includes n8n and Zapier, with integrations involving webhooks, APIs, AI services, spreadsheets and email.</p></details>
+  <details><summary>Can you perform a technical SEO audit?</summary><p>Yes. I can review areas such as crawlability, indexability, metadata, headings, canonical tags, XML sitemaps, internal linking and basic performance signals, then organize findings and recommendations.</p></details>
+  <details><summary>Are the projects shown client projects?</summary><p>The projects in this portfolio are presented as personal builds, prototypes or workflow demonstrations unless a project is specifically identified otherwise.</p></details>
+ </div>
+</div></section>
+
+<section class="section contact" id="contact"><div class="container contact-grid">
+ <div><div class="eyebrow">06 / Get in touch</div><h2 class="section-title">Have a website<br>or workflow to<br><span class="accent">improve?</span></h2><p class="intro">If you’re looking for help with website maintenance, technical SEO, troubleshooting or automation, let’s discuss the requirements.</p></div>
+ <div class="contact-aside"><p class="small">START A CONVERSATION</p><p>Share a little about the project, the issue you’re facing or the process you want to improve. We can start by defining the most useful next step.</p><a class="btn" href="https://vicdoce2020-creator.github.io/vic-portfolio/" target="_blank" rel="noopener">View portfolio <span class="arrow">↗</span></a><p class="small" style="margin-top:24px">CONTACT LINK</p><p>Replace this area with your preferred email address or inquiry-form link before publishing.</p></div>
+</div></section>
+</main>
+<footer><div class="container footer-inner"><a class="brand" href="#top"><svg class="brand-symbol" viewBox="0 0 48 48" aria-hidden="true"><path d="M7 39 24 7l17 32H30L24 27l-6 12Z" fill="#f7efe1"/><path d="M24 7 41 39H30L24 27" fill="none" stroke="#f47721" stroke-width="3"/><path d="M13 29h22" stroke="#1f1c1b" stroke-width="2"/></svg><span>KYNTRA<small style="color:#bdb2a5">WEB SYSTEMS & AUTOMATION</small></span></a><nav class="footer-links"><a href="#expertise">Expertise</a><a href="#work">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></nav><span class="copyright">© 2026 KYNTRA. All rights reserved.</span></div></footer>
+<script>
+const header=document.getElementById('header'), menu=document.getElementById('menuButton'), nav=document.getElementById('nav');
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>24),{passive:true});
+menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);menu.textContent=open?'CLOSE ✕':'MENU ☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='MENU ☰'}));
+</script>
+</body>
+</html>
